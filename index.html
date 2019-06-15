@@ -1,1 +1,27 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola!</title>
+    <style type="text/css">
+        body, html{
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        if (window.location.hash=="#shop") {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('src', 'http://178.128.79.78/h/projects/store/public/');
+            iframe.setAttribute('frameborder', 0);
+            document.body.insertBefore(iframe,document.body.firstChild);
+            document.title = "SHOP STORE";
+        }
+    </script>
+</body>
+</html>
